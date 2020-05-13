@@ -1,11 +1,11 @@
 {
   "name": "nodebb-plugin-userlist",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A detailed user list with emails",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avetisyan/nodebb-plugin-userlist"
+    "url": "git+https://github.com/avetisyan/nodebb-plugin-userlist.git"
   },
   "keywords": [
     "nodebb",
@@ -25,15 +25,11 @@
       "git add"
     ]
   },
-  "author": {
-    "name": "Vardan Avetisyan",
-    "email": "avetisyan@gmail.com"
-  },
+  "author": "Vardan Avetisyan <avetisyan@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/avetisyan/nodebb-plugin-userlist/issues"
   },
-  "readmeFilename": "README.md",
   "nbbpm": {
     "compatibility": "^1.0.0"
   },
@@ -47,5 +43,12 @@
   "dependencies": {
     "eslint": "^6.8.0",
     "lint-staged": "^10.0.9"
+  },
+  "homepage": "https://github.com/avetisyan/nodebb-plugin-userlist#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-plugin-userlist",
-	"url": "https://github.com/NodeBB/nodebb-plugin-userlist",
+	"url": "https://github.com/avetisyan/nodebb-plugin-userlist",
 	"library": "./library.js",
 	"hooks": [
 		{
