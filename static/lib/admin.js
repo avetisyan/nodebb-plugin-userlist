@@ -2,21 +2,21 @@
 
 /* globals $, app, socket, define, config */
 
-define('admin/plugins/quickstart', ['settings', 'uploader', 'admin/modules/colorpicker'], function (settings, uploader, colorpicker) {
+define('admin/plugins/userlist', ['settings', 'uploader', 'admin/modules/colorpicker'], function (settings, uploader, colorpicker) {
 	var ACP = {};
 
 	ACP.init = function () {
 		setupColorInputs();
 		setupUploader();
-		settings.load('quickstart', $('.quickstart-settings'));
+		settings.load('userlist', $('.userlist-settings'));
 		$('#save').on('click', saveSettings);
 	};
 
 	function saveSettings() {
-		settings.save('quickstart', $('.quickstart-settings'), function () {
+		settings.save('userlist', $('.userlist-settings'), function () {
 			app.alert({
 				type: 'success',
-				alert_id: 'quickstart-saved',
+				alert_id: 'userlist-saved',
 				title: 'Settings Saved',
 				message: 'Please reload your NodeBB to apply these settings',
 				clickfn: function () {
@@ -47,7 +47,7 @@ define('admin/plugins/quickstart', ['settings', 'uploader', 'admin/modules/color
 				uploader.show({
 					route: config.relative_path + '/api/admin/upload/file',
 					params: {
-						folder: 'quickstart',
+						folder: 'userlist',
 					},
 					accept: 'image/*',
 				}, function (image) {
